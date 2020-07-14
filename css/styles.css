@@ -55,6 +55,42 @@ hr {
   width: 4%;
   margin: 100px auto;
 }
+
+.hr-contact {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: gray;
+  border-width: 6px;
+  width: 4%;
+  margin: 100px auto;
+}
+/************Active page****************/
+.active{
+  color: #799fca;
+  border-bottom: solid #799fca;
+  padding-bottom: 6px;
+}
+/*****************Navigation bar styles*****************/
+nav ul{
+  position: absolute;
+  top: 50px;
+  float: right;
+
+  z-index: 1;
+  right: 200px;
+}
+ nav ul li{
+   display: inline-block;
+ }
+ nav ul li a {
+   padding-top: 6px;
+   border-top: solid #E4F9F5;
+ }
+
+nav ul li a:hover{
+  color: #799fab;
+  border-color: #799fab;
+}
 /***************************Class Selector*************************/
 
 .bottom-cloud{
@@ -67,6 +103,7 @@ hr {
   position: absolute;
   right: 40px;
   top: 50px;
+  float: right;
 }
 
 .pro{
@@ -79,6 +116,10 @@ hr {
   position: relative;
   background-color: #E4F9F5;
   padding-top: 100px;
+  top: 0px;
+display:inline-block;
+width: 100%;
+top: 0;
 }
 
 
@@ -89,6 +130,7 @@ hr {
 .bottom-container{
   background-color: #66BFBF;
   padding: 50px 0 20px;
+  margin-top: 0;
 }
 
 .profile{
@@ -101,6 +143,59 @@ hr {
 
 }
 
+
+/*****Social Media icon bar**************/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  opacity: 1;
+  transform: scale(1.15);
+
+}
+
+/*************Links backgrounds**********/
+.facebook {
+  background: #3B5998;
+  border-radius: 8px;
+  opacity: 0.75;
+}
+
+.git {
+  background: #211f1f;
+  border-radius: 8px;
+  opacity: 0.65;
+}
+
+.google {
+  background: #dd4b39;
+  border-radius: 8px;
+  opacity: 0.75;
+}
+
+.linkedin {
+  background: #007bb5;
+  border-radius: 8px;
+  opacity: 0.75;
+}
+
 /***********Skills divs*******************/
 .skill-row{
   width: 50%;
@@ -111,18 +206,23 @@ hr {
 
 
 /************Skills Images******************/
-.stewie1{
+.web{
   width: 25%;
   float: left;
   margin-right: 30px;
 }
 
-.stewie2{
+.python{
   width: 25%;
   float: right;
   margin-left: 30px;
 }
 
+.java{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
 
 
 .contact-me{
@@ -173,4 +273,22 @@ hr {
   color: #EAF6F6;
   font-size: 0.75rem;
   padding: 20px 0;
+}
+
+/******************Contact me page****************/
+.contact-form ul{
+  list-style-type: none;
+}
+
+.form{
+  display: inline-block;
+  width: 40%;
+  background-color: #799f89;
+  border-radius: 10%;
+}
+form label, input, textarea{
+  margin: 10px;
+}
+.submit{
+   margin-bottom: 50px;
 }
